@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Futura'; 
+    src: url('Font/Futura-Medium.ttf?v=1') format('truetype');
+  }
+
+@font-face {
+    font-family: 'FuturaH'; 
+    src: url('Font/Futura-Heavy.ttf?v=1') format('truetype');
+  }
+
+body {
+	margin: 0;
+    background-attachment: fixed;
+    background-image: url(Mats/login-wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Futura', sans-serif;
+}
+
+.logo {
+    /*margin-top: 10px;*/
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.67);
+    color: white;
+      height: 110px;
+    border-radius: 0px 0px 15px 15px;
+  }
+  
+  .logoplacement {
+    margin-top: 9px;
+      margin-left: -990px;
+  }
+  
+  .menulist {
+    width: 490px;
+    margin-top: -68px;
+    margin-left: 720px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0, 0, 0, 0;
+    overflow: hidden;
+  }
+    
+  li {
+    float: left;
+    font-size: 20px;
+  }
+    
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 13px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+    
+  li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: scale(1.1); /* Makes the text slightly bigger */
+  }
+
+  textarea {
+    width: 100%;
+    height: 90px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+  }
+
+  input[type=submit] {
+    width: 90%;
+    height: 45px;
+    background-color: #484848;
+    color: white;
+    padding: 1px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'FuturaH', sans-serif;
+    font-weight: bold;
+  }
+
+  input[type=submit]:hover {
+    background-color: #282828;
+  }
+  
+  .places {
+    width: 95%;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+  
+  .places b {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    line-height: 10px;
+  }
+  
+  .places input[type=text], select {
+    width: 39%;
+    height: 39px;
+    padding: 12px 20px;
+    margin-right: 687px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .gmap {
+    background-color: white;
+    width: 95%;
+    position: relative;
+    font-size: 15px;
+    overflow: hidden;
+    margin-left: 30px;
+  }
+  
+  .likeco {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 230px;
+    width: 95%;
+    position: relative;
+    margin-top: -20px;
+    margin-left: 30px;
+  }
+  
+  .likeco:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .comment {
+    height: 200px;
+    width: 30%;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 27px;
+    float: left;
+  }
+
+  .comment b {
+    line-height: 5px;
+  }
+  
+  .comtrow {
+    width: 100%;
+    display: flex; /* Ensures alignment */
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: -20px; /* Adds spacing between rows */
+    clear: both; /* Ensures new rows start properly */
+  }
+
+  .comtava {
+    width: 100px;
+    margin-left: 10px;
+    float: left;
+  }
+  
+  .comtava img {
+    border-radius: 100px;
+  }
+
+  .comtbox {
+    width: 400px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 20px;
+    float: left;
+  }
+  
+  .comtbox h2 {
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    margin-top: -52px;
+    margin-left: 58px;
+  }
+
+  .pofeed {
+    width: 85%;
+    position: relative;
+    font-size: 20px;
+    margin-left: 91px;
+    display: flex;
+    align-items: flex-start; /* Aligns content at the top */
+    gap: 20px; /* Adds spacing between elements */
+  }
+
+  .slideShow {
+    margin-left: 32px;
+    height: 435px;
+    width: 450px;
+    position: relative;
+  }
+
+  .slideShow img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slideCont {
+    position: relative;
+    display: none;
+  }
+
+  .feedCom {
+    background-color: red;
+    width: fit-content;
+    max-width: 90%;
+    position: relative;
+    margin-top: -434px;
+    margin-left: 470px;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-start; /* Aligns everything to the left */
+    gap: 10px;
+    padding: 20px;
+}
+
+.comment-container {
+  display: flex;
+  align-items: flex-start; /* Keep everything aligned at the top */
+  gap: 10px; /* Space between avatar and text box */
+  width: 100%;
+}
+
+  .comtava2 {
+    width: 100px; 
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .comtava2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevent stretching */
+    border-radius: 50%;
+  }
+
+  .comtbox2 {
+    position: relative;
+    width: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    margin-top: -10px;
+  }
+
+  .comtbox2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+  
+  .comtbox2 h2 {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+  }
+  
+  .slideText {
+    background-color: rgba(0, 0, 0, 0.67);
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .slideNum {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev {
+    left: 0px;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 17px;
+    display: block;
+    text-align: left;
+    line-height: 80%;
+    margin-bottom: -30px;
+  }

@@ -1,0 +1,34 @@
+
+			<div class="slideCont fade">
+				<div class="slideNum">
+					1 / 2
+				</div>
+				<img src="Slide/slide1.png" style="width:100%">
+				<div class="slideText">
+					Caption 1
+				</div>
+			</div>
+
+
+			<div class="goslixg">
+				<h1>100,000 people hated this post</h1>
+				<div class="goslava">
+					<img src="Mats/noob.png" style="width: 100%">
+				</div>
+				<div class="goslbox">
+					<img src="Mats/speech.png" width="100%" height="100%">
+					<h2>What in the absolute fuck is this horseshit? OP<br/>
+					you should absolutely feel ashamed of yourself.<br/>
+				Actually you know what? kys </h2>
+				</div>
+
+				<div class="goslava">
+					<img src="Mats/noob.png" style="width: 100%">
+				</div>
+				<div class="goslbox">
+					<img src="Mats/speech.png" width="100%" height="100%">
+					<h2>What in the absolute fuck is this horseshit? OP<br/>
+					you should absolutely feel ashamed of yourself.<br/>
+				Actually you know what? kys </h2>
+				</div>
+			</div>

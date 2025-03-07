@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Futura'; 
+    src: url('Font/Futura-Medium.ttf?v=1') format('truetype');
+  }
+
+@font-face {
+    font-family: 'FuturaH'; 
+    src: url('Font/Futura-Heavy.ttf?v=1') format('truetype');
+  }
+
+body {
+	margin: 0;
+    background-attachment: fixed;
+    background-image: url(Mats/login-wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Futura', sans-serif;
+}
+
+.logo {
+    /*margin-top: 10px;*/
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.67);
+    color: white;
+      height: 110px;
+    border-radius: 0px 0px 15px 15px;
+  }
+  
+  .logoplacement {
+    margin-top: 9px;
+      margin-left: -990px;
+  }
+  
+  .menulist {
+    width: 490px;
+    margin-top: -68px;
+    margin-left: 720px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0, 0, 0, 0;
+    overflow: hidden;
+  }
+    
+  li {
+    float: left;
+    font-size: 20px;
+  }
+    
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 13px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+    
+  li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: scale(1.1); /* Makes the text slightly bigger */
+  }
+  
+  .slideShow {
+    height: 300px;
+    width: 650px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+  
+  /* Hide the images by default */
+  .slideCont {
+    display: none;
+  }
+  
+  .slideText {
+    background-color: rgba(0, 0, 0, 0.67);
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .slideNum {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .recom {
+    background: rgba(255, 255, 255, 0.20);
+    height: 230px;
+    width: 510px;
+    position: relative;
+    margin-top: -299px;
+    margin-left: 700px;
+    font-family: 'Futura', sans-serif;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .recom b {
+    display: block;
+    text-align: center;
+  }
+  
+  .recom:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .recomSub1 {
+    height: 175px;
+    width: 200px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .recomSub1 img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .recomSub2 {
+    height: 175px;
+    width: 285px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+    float: left;
+  }
+  
+  .recomSub2 b {
+    font-size: 22px;
+    display: block;
+    text-align: left;
+    line-height: 65%;
+  }
+  
+  .recomSub2 h1 {
+    font-weight: normal;
+    font-size: 17px;
+    display: block;
+    text-align: left;
+    line-height: 110%;
+  }
+  
+  .recomSub2 a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+  
+  .recomSub2 a:hover {
+    transform: scale(1.05);
+  }
+  
+  .adv {
+    height: 125px;
+    width: 510px;
+    margin-top: 197px;
+    overflow: hidden;
+  }
+  
+  .adv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gosling {
+    width: 95%;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 41px;
+    font-family: 'Futura', sans-serif;
+    font-size: 30px;
+  }
+  
+  .gosling b {
+    display: block;
+    text-align: center;
+  }
+  
+  .goslimg {
+    height: 435px;
+    width: 450px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 60px;
+    font-size: 15px;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .goslimg:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .goslimg img {
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .goslixg {
+    background-color: rgba(255, 255, 255, 0.50);
+    height: 435px;
+    width: 550px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 15px;
+    overflow: hidden;
+    float: left;
+  }
+  
+  .goslixg h1 {
+    font-weight: normal;
+    font-size: 17px;
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .goslixg:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .goslava {
+    width: 100px;
+    margin-left: 10px;
+    float: left;
+  }
+  
+  .goslava img {
+    border-radius: 100px;
+  }
+  
+  .goslbox {
+    width: 400px;
+    height: 100px;
+    margin-left: 10px;
+    float: left;
+  }
+  
+  .goslbox h2 {
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    margin-top: -85px;
+    margin-left: 50px;
+  }
+  
+  .goslrow {
+    width: 100%;
+    display: flex; /* Ensures alignment */
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 30px; /* Adds spacing between rows */
+    clear: both; /* Ensures new rows start properly */
+  }

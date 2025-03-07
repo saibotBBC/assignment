@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Futura'; 
+    src: url('Font/Futura-Medium.ttf?v=1') format('truetype');
+  }
+
+@font-face {
+    font-family: 'FuturaH'; 
+    src: url('Font/Futura-Heavy.ttf?v=1') format('truetype');
+  }
+
+body {
+	margin: 0;
+    background-attachment: fixed;
+    background-image: url(Mats/login-wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Futura', sans-serif;
+}
+
+.logo {
+    /*margin-top: 10px;*/
+    text-align: center;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.67);
+    width: 500px;
+    height: 480px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 360px;
+    position: fixed; 
+}
+
+.login-text {
+    width: 420px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 39.5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    height: 45px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=password], select {
+  width: 100%;
+  height: 45px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  height: 45px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'FuturaH', sans-serif;
+  font-weight: bold;
+}
