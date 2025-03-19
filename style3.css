@@ -193,7 +193,16 @@ body {
     font-weight: normal;
     font-size: 15px;
     text-align: left;
-    margin-top: -52px;
+    margin-top: -58px;
+    margin-left: 58px;
+  }
+
+  .comtbox h1 {
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    margin-top: -47px;
     margin-left: 58px;
   }
 
@@ -226,7 +235,7 @@ body {
   }
 
   .feedCom {
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.50);
     width: fit-content;
     max-width: 90%;
     position: relative;
@@ -282,6 +291,15 @@ body {
   .comtbox2 h2 {
     position: absolute;
     margin-top: 0%;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: normal;
+  }
+
+  .comtbox2 h1 {
+    position: absolute;
+    margin-top: -33px;
     margin-left: 20px;
     font-size: 16px;
     color: black;
