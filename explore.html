@@ -1,0 +1,167 @@
+<html>
+<meta charset="utf-8">
+<title>Foodies.MY</title>
+<head>
+	<link rel="stylesheet" href="style3.css"/>
+	<link rel="icon" type="image/jpg" href="Mats/my-ps.png">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MBN1K9TMJZ"></script>
+	 
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-MBN1K9TMJZ');
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<img src="Mats/logo.png" class="logoplacement" width="15%">
+		<div class="menulist">
+			<ul>
+			<li><a href="homepage.html">Homepage</a></li>
+			<li><a href="explore.html">Explore</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</div>
+
+	<div class="places">
+		<b>Browse Area</b><br/>
+		<div class="gmap">
+			<img src="Map/gmap-01.png" width="99%">
+		</div>
+
+		<br/>
+
+		<div class="likeco">
+			<div class="comment">
+				<br/>
+				<b>Comment here:</b><br/>
+				<textarea placeholder="Comment here you dimwit">Comment here...
+				</textarea><br/>
+				<input type="submit" value="Enter">
+			</div>
+
+			<div class="comment">
+				<div class="comtrow">
+					<div class="comtava">
+						<img src="Mats/ichi.png" style="width: 100%">
+					</div>
+					<div class="comtbox">
+						<img src="Mats/speech.png" width="80%" height="70%">
+						<h2>Nice place but<br/>
+						too expensive</h2>
+					</div>
+				</div>
+				
+				<div class="comtrow">
+					<div class="comtava">
+						<img src="Mats/saeko.png" style="width: 100%">
+					</div>
+					<div class="comtbox">
+						<img src="Mats/speech.png" width="80%" height="70%">
+						<h1>Fast service (y)</h1>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="comment">
+				<br/>
+				<b>Ratings:</b><br/>
+				<img src="Mats/rating-01.png" width="100%">
+			</div>
+		</div>
+
+		<br/>
+
+		<b>News Feed</b><br/>
+		<div class="pofeed">
+			<div class="slideShow">
+				<div class="slideCont">
+					<img src="Posts/_MG_6725.JPG" style="width:100%">
+					<div class="feedCom">
+						<h1>100 people like this</h1><br/>
+						<div class="comment-container">
+							<div class="comtava2">
+								<img src="Mats/saeko.png" style="width: 100%">
+							</div>
+							<div class="comtbox2">
+								<img src="Mats/speech.png" width="100%" height="100%">
+								<h2>Were these expensive?</h2>
+							</div>
+						</div>
+
+						
+						<div class="comment-container">
+							<div class="comtava2">
+								<img src="Mats/noob.png" style="width: 100%">
+							</div>
+							<div class="comtbox2">
+								<img src="Mats/speech.png" width="100%" height="100%">
+								<h1>For goodness sake bring me<br/> 
+									next time</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				
+				<div class="slideCont">
+					<img src="Posts/_MG_6460.JPG" style="width:100%">
+					<div class="feedCom">
+						<h1>200 people like this</h1><br/>
+						<div class="comment-container">
+							<div class="comtava2">
+								<img src="Mats/bruh.png" style="width: 100%">
+							</div>
+							<div class="comtbox2">
+								<img src="Mats/speech.png" width="100%" height="100%">
+								<h2>nice!!</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+		</div>
+	</div>
+
+    <br/><br/>
+
+</body>
+
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("slideCont");
+		let dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+    		slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		}
+</script>
+
+</html>

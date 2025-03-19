@@ -1,0 +1,140 @@
+<html>
+<meta charset="utf-8">
+<title>Foodies.MY</title>
+<head>
+	<link rel="stylesheet" href="style2.css"/>
+	<link rel="icon" type="image/jpg" href="Mats/my-ps.png">
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MBN1K9TMJZ"></script>
+	 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-MBN1K9TMJZ');
+		</script>
+</head>
+
+<body>
+	<div class="header">
+		<img src="Mats/logo.png" class="logoplacement" width="15%">
+		<div class="menulist">
+			<ul>
+			<li><a href="homepage.html">Homepage</a></li>
+			<li><a href="explore.html">Explore</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			</ul>
+		</div>
+
+		<div class="slideShow">
+			<div class="slideCont fade">
+				<img src="Slide/slide1.png" style="width:100%">
+			</div>
+
+			
+			<div class="slideCont fade">
+				<img src="Slide/slide2.png" style="width:100%">
+			</div>
+
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+			</div>
+		</div>
+
+		<div class="recom">
+			<b>Today's Recommended!</b>
+			<div class="recomSub1">
+				<img src="Places/placeholder.jpg">
+			</div>
+			
+			<div class="recomSub2">
+				<b><br/>Placeholder Restaurant</b>
+				<h1>A definitely famous restaurant that no one has ever heard of
+					in Malaysia. No seriously, I'm being honest here! What, you
+					think I'm lying? Stupid cunt... fuck off with you you dipshit
+					<br/><br/>
+					<a href="#">Click here to learn more</a>
+				</h1>
+			</div>
+
+			<div class="adv">
+				<img src="Mats/ad.png">
+			</div>
+		</div>
+
+		<br/>
+
+		<div class="gosling">
+			<b>Today's Featured Posting</b>
+			<div class="goslimg">
+				<img src="Posts/_MG_6731.JPG">
+			</div>
+
+			<div class="goslixg">
+				<h1>100,000 people hated this post</h1><br/>
+				<div class="goslrow">
+					<div class="goslava">
+						<img src="Mats/noob.png" style="width: 100%">
+					</div>
+					<div class="goslbox">
+						<img src="Mats/speech.png" width="100%" height="100%">
+						<h2>Lookin' good! (No...)<br/></h2>
+					</div>
+				</div>
+				
+				<div class="goslrow">
+					<div class="goslava">
+						<img src="Mats/gay.png" style="width: 100%">
+					</div>
+					<div class="goslbox">
+						<img src="Mats/speech.png" width="100%" height="100%">
+						<h2>The lighting on this one looks terrible bruh<br/>
+						can you please get gud<br/></h2>
+					</div>
+				</div>
+
+				<div class="goslrow">
+					<div class="goslava">
+						<img src="Mats/him.png" style="width: 100%">
+					</div>
+					<div class="goslbox">
+						<img src="Mats/speech.png" width="100%" height="100%">
+						<h2>If it weren't for the horrible lighting<br/>
+						I'd say this place actually looks cozy, so<br/>
+						great work ruining it </h2>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<br/><br/>
+
+	</div>
+</body>
+
+<script>
+	let slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("slideCont");
+	  let dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 10000); // Change image every 2 seconds
+	}
+</script>
+
+</html>
